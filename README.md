@@ -6,3 +6,5 @@
 #The API is done in the file(createData.php, fetchAllData.php, fetchSingleData.php)
 
 Check these files to see source code of Creating API.....
+
+#The API is checked using The Third Party Application POSTMAN and these are working perfectly.
