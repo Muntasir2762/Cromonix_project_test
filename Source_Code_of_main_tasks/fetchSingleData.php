@@ -8,11 +8,11 @@ header('Access-Control-Allow-Origin: *');
 
 $data =json_decode(file_get_contents("php://input"), true);
 
-$id=$data['L_id'];
+$id=$data['id'];
 
 include 'database.php';
 
-$sql="SELECT * FROM todos WHERE id={$L_id}";
+$sql="SELECT * FROM todos WHERE id={$id}";
 $result=mysqli_query($conn, $sql) or die("SQL Query Failed.");
 
 if(mysqli_num_rows($result)>0){
